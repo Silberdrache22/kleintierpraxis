@@ -3,22 +3,28 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="index.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
    <title>Kleintierpraxis-kammermeier</title>
 </head>
 <body>
    <header>
-      <div class="navbar">
-         <div class="logo">
-            <img src="./images/Vetlogo.svg" alt="vet-logo">
-            <div>
-               <h1>Kleintierpraxis</h1>
-               <p class="header-name">Dr. med. vet. Sabine Kammermeier</p>
+      <div class="container">
+         <div class="navbar">
+            <div class="logo">
+               <img src="./images/Vetlogo.svg" alt="vet-logo">
+               <div class="name-header">
+                  <h1>Kleintierpraxis</h1>
+                  <p class="header-name">Dr. med. vet. Sabine Kammermeier</p>
+               </div>
             </div>
+            <p class="header-name header-number">Termine unter 09090 / 4898</p>
          </div>
-         <p class="header-name">Termine unter 09090 / 4898</p>
-
       </div>
+      <div class="underline"></div>
+         
    </header>
 
    <main>
@@ -28,28 +34,31 @@
          <img src="./images/image3.jpg" alt="">
       </section>
 
-      <section class="info">
-         <p class="closed"></p>
-         <p class="info-text">
-            Herzlich Willkommen in der Tierarztpraxis Dr. Sabine Kammermeier!
-
-            Das Wohlbefinden Ihrer tierischen Begleiter steht bei mir an erster Stelle. 
-            Mit Fachwissen und viel Herz kümmere ich mich um die Gesundheit von 
-            Hunden, Katzen, Kaninchen und anderen kleinen Heimtieren. 
-            Ob Routineuntersuchung, Impfung oder medizinische Betreuung im Krankheitsfall - 
-            ich nehme mir Zeit für jedes Tier und seine individuellen Bedürfnisse.
-            
-            Mein Ziel ist es, nicht nur zu heilen, sondern auch vorzubeugen. Deshalb legen wir großen Wert 
-            auf persönliche Beratung und eine vertrauensvolle Zusammenarbeit mit Ihnen als Tierhalter. 
-            
-            Vereinbaren Sie gerne einen Termin - ich freue mich auf Sie!</p>
+      <section class="container">
+         <div class="info">
+            <p class="closed">
+               *** Praxis geschlossen von bis... ***
+            </p>
+            <p class="info-text">
+               Herzlich Willkommen in der Tierarztpraxis Dr. Sabine Kammermeier!
+               <br><br>
+               Das Wohlbefinden Ihrer tierischen Begleiter steht bei mir an erster Stelle. 
+               Mit Fachwissen und viel Herz kümmere ich mich um die Gesundheit von 
+               Hunden, Katzen, Kaninchen und anderen kleinen Heimtieren. 
+               Ob Routineuntersuchung, Impfung oder medizinische Betreuung im Krankheitsfall - 
+               ich nehme mir Zeit für jedes Tier und seine individuellen Bedürfnisse.
+               <br><br>
+               Mein Ziel ist es, nicht nur zu heilen, sondern auch vorzubeugen. Deshalb legen wir großen Wert 
+               auf persönliche Beratung und eine vertrauensvolle Zusammenarbeit mit Ihnen als Tierhalter. 
+               <br><br>
+               Vereinbaren Sie gerne einen Termin - ich freue mich auf Sie!</p>
+         </div>
       </section>
-
    </main>
 
-   <footer>
-      <section class="contact">
-         <div>
+   <footer >
+      <section class="container contact">
+         <div class="address">
             <h3>Kontakt</h3>
             <div>
                <p>Dr. Sabine Kammermeier</p>
@@ -59,9 +68,9 @@
             <p>09090 / 4898</p>
          </div>
 
-         <div>
+         <div >
             <h3>Öffnungszeiten mit telefonischer Terminvereinbarung</h3>
-            <div>
+            <div class="available-times">
                <ul class="week-days">
                   <li>Montag</li>
                   <li>Dienstag</li>
@@ -82,11 +91,14 @@
       </section>
 
       <section class="impressum">
-         <a href="">Impressum</a>
-         <p> | </p>
-         <a href="">Datenschutzerklärung</a>
-      </section>
-
+         <div class="container">
+            <div class="impressum-content">
+               <a href="">Impressum</a>
+               <p> | </p>
+               <a href="">Datenschutzerklärung</a>
+            </div>
+         </div>
+      </section>  
    </footer>
 </body>
 </html>
