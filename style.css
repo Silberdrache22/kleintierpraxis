@@ -168,7 +168,17 @@ h3 {
 
 /* for smaller screens */
 
+@media(max-width:1000px) {
+  .container {
+    padding: 0 4rem;
+  }
+}
+
 @media(max-width:650px){
+  .container {
+    padding: 0 2rem;
+  }
+
   .navbar {
     flex-direction: column;
     align-items: center;
