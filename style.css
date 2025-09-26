@@ -217,9 +217,8 @@ h3 {
 /* Style for Datenschutzerklärung */
 
 .headline {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 500;
-  color: #C41E3A;
 }
 
 
@@ -274,4 +273,32 @@ h3 {
   .impressum-content {
     justify-content: center;
   }
+}
+
+
+
+/* Robuste, konfliktfreie Bullet-Liste */
+.info .rights-list,
+.info .rights-list li {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* verhindern, dass default bullets stören */
+}
+
+
+.info .rights-list li {
+  position: relative;
+  padding-left: 1.8rem;    /* Platz für das Bullet */
+  margin-bottom: 0.6rem;
+  line-height: 1.1;
+}
+
+.info .rights-list li::before {
+  content: "•";            
+  position: absolute;
+  left: 0;
+  top: 0.25rem;             /* vertikale Ausrichtung anpassen falls nötig */
+  font-size: 1rem;
+  line-height: 1;
+  color: #111;              /* Bulletfarbe */
 }
