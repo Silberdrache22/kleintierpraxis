@@ -214,6 +214,15 @@ h3 {
 }
 
 
+/* Style for Datenschutzerklärung */
+
+.headline {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #C41E3A;
+}
+
+
 /* Utility */
 .container {
   max-width: var(--max-width-content);
